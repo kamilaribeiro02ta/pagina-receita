@@ -1,14 +1,14 @@
-:root{
+:root {
     --text-color-primary: #291B1A;
     --text-color-secondary: #573A37;
     --text-color-on-bg: #F0E8C2;
     --background-color: #573824;
     --background-image: url(./assets/bolo.png);
-    --surface-color:  #F0E8C2;
-   
+    --surface-color: #F0E8C2;
+    font-family: 62.5%;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,89 +16,90 @@
 }
 
 body {
-
     font-size: 1.6rem;
     background-image: var(--background-image);
     background-color: var(--background-color);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(12px);
     padding-block: 4.8rem;
 }
 
 body::before {
-position: fixed;
-top: 0;
-z-index: -1;
-opacity: 0.7;
-content: "";
-background-color: var(--background-color);
-width: 100%;
-height: 100%;
-min-height: 100svh;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    opacity: 0.7;
+    content: "";
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100%;
+    min-height: 100svh;
 }
 
-p{
+p {
     color: var(--text-color-secondary);
     line-height: 150%;
 
 }
 
-h2{
+h2 {
     font-weight: 400;
     font-size: 2.4rem;
     line-height: 150%;
 }
 
-h1, h2 {
+h1,
+h2 {
 
-color: var(--text-color-primary);
-margin-bottom: 0.4rem;
+    color: var(--text-color-primary);
+    margin-bottom: 0.4rem;
 }
 
 main {
-max-width: 88rem;
-background: var(--surface-color);
-margin-inline: auto;
-padding: 2.4rem;
-border-radius: 2.4rem;
+    max-width: 80rem;
+    background: var(--surface-color);
+    margin-inline: auto;
+    padding: 2.4rem;
+    border-radius: 2.4rem;
 
-img{
-    border-radius: 1.6rem;
-    margin-bottom: 2.4rem;
-}
-section{
-    padding-inline: 2.4rem;
-}
-
-.apresentacao{
-    margin-bottom: 2.4rem;
-
-    h1 {
-        font-size: 4rem;
-        font-weight: 400;
-        line-height: 140%;
+    img {
+        border-radius: 1.6rem;
+        margin-bottom: 2.4rem;
     }
-    
-    p:nth-of-type(1) {
-      margin-bottom: 1.2rem;  
-    }
-}
 
-.ingredientes {
-    margin-bottom: 2.4rem;
-    
-    ul{
-     padding-left: 2.4rem;
-     line-height: 150%;
-     color: var(--text-color-secondary);
-
+    section {
+        padding-inline: 2.4rem;
     }
-}
 
-.modo-preparo {
-    p {
-        margin-bottom: 1.2rem;
+    .apresentacao {
+        margin-bottom: 2.4rem;
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 400;
+            line-height: 140%;
+        }
+
+        p:nth-of-type(1) {
+            margin-bottom: 1.2rem;
+        }
     }
-}
+
+    .ingredientes {
+        margin-bottom: 2.4rem;
+
+        ul {
+            padding-left: 2.4rem;
+            line-height: 150%;
+            color: var(--text-color-secondary);
+
+        }
+    }
+
+    .modo-preparo {
+        p {
+            margin-bottom: 1.2rem;
+        }
+    }
 }
